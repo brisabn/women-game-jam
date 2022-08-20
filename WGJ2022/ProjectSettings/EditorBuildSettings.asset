@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/3-Quarto.unity
+    guid: 5443944e0acd345b58e7fef07590e22a
+  - enabled: 1
+    path: Assets/Scenes/1-MenuInicial.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/2-ChaRevelacao.unity
+    guid: 48b2059a0465a422fb530569e2b57b5e
+  - enabled: 1
+    path: Assets/Scenes/4-Escola.unity
+    guid: 8e8dd28794c1d4f1384ba412b534773e
+  - enabled: 1
+    path: Assets/Scenes/5-Trabalho.unity
+    guid: afa6e7cdcb945444c886cc4fcf186a7b
+  - enabled: 1
+    path: Assets/Scenes/6-Final-feliz.unity
+    guid: 0611a650ecd8b479880aad10b7dd3383
+  - enabled: 1
+    path: Assets/Scenes/7-Final-triste.unity
+    guid: 57f6ca5f5a2a84a80b8bcc29cd2e049a
+  - enabled: 1
+    path: Assets/Scenes/8-Creditos.unity
+    guid: ff93fc7921a8c46a49d8f0d09835f892
   m_configObjects: {}
