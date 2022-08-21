@@ -1,18 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ObjectManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool pickUpAllowed;
+    public GameObject Object;
+
+    private void Start()
     {
-        
+        Object.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
+        {
+            ShowHiddenObject();
+        }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Equals("Player"))
+        {
+            pickUpAllowed = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Equals("Player"))
+        {
+            pickUpAllowed = false;
+        }
+    }
+
+    public void ShowHiddenObject()
+    {
+        Object.gameObject.SetActive(true);
+    }
+
+    public void CloseHiddenObject()
+    {
+        Object.gameObject.SetActive(false);
+    }
+
 }
